@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://proicons.netlify.app/css/icons.min.css">
+    <title>Flappy Bird Game</title>
+    <meta name="description" content="Flappy bird game play and enjoy for free.">
+  </head>
+  <body>
+      <div class="head">
+          <div class="head-inner">          <img src="./images/logo.png" alt="">
+            <span>flappy bird Game</span>
+  </div>
+      </div>
+      <div class="container">
+          <div>
+              <b>Score: <b id="score">0</b></b>
+
+              <b>High Score: <b id="flappy-bird-high-score">0</b></b>
+
+              <b>Time: <b id="time"> 0</b></b>
+          </div>
+      </div>
+    <div class="background" id="game-wrapper">
+
+    </div>
+
+    <div class="menu-splash" id="play">
+        <div class="play-btn" id="play-btn">
+            <i class="fas fa-play-circle"></i>
+            <span>play</span>
+        </div>
+    </div>
+    <div class="menu-splash" id="fly">
+        <div class="play-btn" id="fly-btn">
+            <i class="fad fa-angle-double-up"></i>
+            <span>fly</span>
+        </div>
+    </div>
+
+    <div class="rules-wrapper">
+        <div class="rules">
+            <span class="title">Rules:</span>
+            <ol class="rules-body">
+              <li>
+                Press Spacebar , "0" or "a" on keybard to fly.
+              </li>
+              <li>
+                  You can also tap on game window to fly the bird.
+              </li>
+              <li>Press "s" on keyboard or click on play button to start the game.</li>
+              <li>
+                  Game will be over if bird will crash with pillars.
+              </li>
+              <li>You don't have to worry if bird fall down it wii fly on minimum height</li>
+              <li>Easy GAME Easy Rule :) that's it..😊😊😊</li>
+            </ol>
+          </div>
+  
+    </div>
+
+      <script src="./js/bird.js"></script>
+      <script src="./js/obstacle.js"></script>
+      <script src="./js/index.js"></script>
+    </div>
+  </body>
+</html>

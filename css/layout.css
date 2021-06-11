@@ -1,0 +1,155 @@
+@keyframes back-move {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: -100%; } }
+
+.background {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  background: url(../images/background.png);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  height: 20rem;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden; }
+  .background * {
+    user-select: none; }
+  .background.animate {
+    animation: back-move 5s linear infinite; }
+
+@keyframes bird-fly {
+  0% {
+    background: url("../images/bird2.png") no-repeat 0 0;
+    background-size: 642px 40px; }
+  100% {
+    background: url("../images/bird2.png") no-repeat 100% 92.308%;
+    background-size: 642px 40px; } }
+
+.bird {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  animation: bird-fly 1s infinite steps(14);
+  cursor: pointer;
+  transition: transform 0.1s linear; }
+  .bird.crash {
+    background: url("../images/bird2.png") no-repeat 0 0;
+    background-size: 642px 40px;
+    animation: none; }
+  .bird.down {
+    transform: translate(50%, -50%) rotate(30deg); }
+  .bird.up {
+    transform: translate(50%, -50%) rotate(-20deg); }
+
+.pillor-down1 {
+  background: url("imgs/assets.png") no-repeat 0 91.919%;
+  width: 30px;
+  height: 181px; }
+
+.pillor-down2 {
+  background: url("imgs/assets.png") no-repeat 5.667% 91.919%;
+  width: 30px;
+  height: 181px; }
+
+.pillor-up {
+  background: url("imgs/assets.png") no-repeat 11.517% 91.919%;
+  width: 30px;
+  height: 181px; }
+
+.pillor-down3 {
+  background: url("imgs/assets.png") no-repeat 17.185% 91.919%;
+  width: 30px;
+  height: 181px; }
+
+.obstacle {
+  position: absolute;
+  transform: translate(50%, -50%); }
+
+.obstacle-up {
+  position: absolute;
+  transform: translate(50%, -50%) rotate(180deg); }
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; }
+  .container > div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 30rem; }
+
+.hide {
+  visibility: hidden; }
+
+.menu-splash {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  user-select: none; }
+  .menu-splash + .menu-splash {
+    padding-top: 0.5rem; }
+  .menu-splash .play-btn {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #262aa3;
+    color: white;
+    padding: 0.5rem;
+    padding-top: 0.6rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    min-width: 5rem;
+    cursor: pointer; }
+    .menu-splash .play-btn > span {
+      user-select: none;
+      text-transform: capitalize;
+      margin-left: 0.5rem;
+      font-weight: bold; }
+    .menu-splash .play-btn:hover {
+      background-color: #141772; }
+
+.rules-wrapper {
+  background-color: #eee;
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 2rem; }
+  .rules-wrapper .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #1c50b9;
+    padding: 0.5rem;
+    padding-left: 0; }
+  .rules-wrapper .rules-body {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 1rem; }
+
+.head-inner {
+  display: flex;
+  justify-content: center; }
+  .head-inner > img {
+    height: 3rem;
+    width: 3rem; }
+  .head-inner > span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #0e36d4; }
